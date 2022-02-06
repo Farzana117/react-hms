@@ -1,14 +1,10 @@
-.App {
-  text-align: center;
-}
-
 nav{
-  background-color: gray;
+  background-color: black;
   color: white;
   justify-content: end !important;
 }
 .auth{
-  background-image: url("C:\Users\HAI\Pictures\snips\istockphoto-1307543555-170667a.jpg");
+  background-image: url("C:\Users\HAI\Pictures\snips\doc.jpg");
   background-size: cover;
   background-position: left;
   height: 500px;
@@ -17,7 +13,7 @@ ul{
   display: contents;
 }
 li{
-  margin-right: 115px;
+  margin-right: 15px;
 }
 
 .signup-page, .login-page, .booking{
@@ -25,12 +21,11 @@ li{
 }
 
 form{
-  width: 300px;
+  width: 800px;
   margin: auto;
-  border: 1px solid grey;
-  border-radius: 20px;
+  border: 2px solid white;
   padding: 30px;
-  background-color: lightblue;
+  background-color: black;
   color: white;
 }
 
@@ -76,7 +71,7 @@ h3{
 }
 
 .ops{
-  background-color: antiquewhite;
+  background-color: white;
   width: 600px;
   text-align: center;
   margin:auto;

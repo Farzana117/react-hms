@@ -21,18 +21,11 @@ function App() {
             <li className="nav-item">
               <Link className="nav-link" to={"/"} style={{ color: 'white', textDecoration: 'underline' }}>Home</Link>
             </li>
-            <li className="nav-item dropdown">
-              <DropdownButton id="dropdown-basic-button" title="Appointments">
-                <Dropdown.Item href="/appointments/bookAppointment">Book Appointment</Dropdown.Item>
-                <Dropdown.Item href="/appointments/manageAppointment">Manage Appointment</Dropdown.Item>
-              </DropdownButton>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/appointments"} style={{ color: 'white', textDecoration: 'underline' }}>Book Appointment</Link>
             </li>
-            <li className="nav-item dropdown">
-              <DropdownButton id="dropdown-basic-button" title="Treatment service">
-                <Dropdown.Item href="/treatmentservice/operationsVaccinations">Operations and Vaccinations</Dropdown.Item>
-                <Dropdown.Item href="/treatmentservice/consultationsCheckup">Consultations and Checkup</Dropdown.Item>
-                <Dropdown.Item href="/treatmentservice/prescriptions">Prescriptions</Dropdown.Item>
-              </DropdownButton>
+            <li className="nav-item">
+            <Link className="nav-link" to={"/prescriptions"} style={{ color: 'white', textDecoration: 'underline' }}>My prescriptions</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to={"/login"} style={{ color: 'white', textDecoration: 'underline' }}>Login</Link>
@@ -47,11 +40,8 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/appointments/bookAppointment" element={<BookAppointments />} />
-          <Route path="/appointments/manageAppointment" element={<ManageAppointments />} />
-          <Route path="/treatmentservice/operationsVaccinations" element={<OperationsVaccinations />} />
-          <Route path="/treatmentservice/consultationsCheckup" element={<ConsultationsCheckup />} />
-          <Route path="/treatmentservice/prescriptions" element={<Prescriptions />} />
+          <Route path="/appointments" element={<BookAppointments />} />
+          <Route path="/prescriptions" element={<Prescriptions />} />
         </Routes>
       </div>
     </div>

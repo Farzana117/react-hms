@@ -17,28 +17,22 @@ function BookAppointments(){
         let path = `/`; 
         navigate(path);
     }
+    function cancelled(){
+        window.alert('Appointment cancelled Successfully!!!');
+        let path = `/`; 
+        navigate(path);
+    }
     return(
         <div className="booking">
-            <form>
-                <h3>Book Appointment</h3>
-                <div className="form-group">
-                    <label>Name</label>
-                    <input type="text" className="form-control" placeholder="Enter full name" />
-                </div><br/>
-                <div className="form-group">
-                    <label>Date of birth</label>
-                    <input type="date" id="start" name="dob" value="2018-07-22"/>
-                </div><br/>
-                <div className="form-group">
-                    <label>select from available timings</label>
-                    <Select options={Timings} style={{color:'black'}}/>
-                </div><br/>
-                <div className="form-group">
-                    <label>Reason</label>
-                    <textarea type="text" className="form-control" placeholder="Enter reason for appointment" />
-                </div><br/><br/>
-                <button type="submit" className="btn btn-primary btn-block" onClick={bookedfunc}>Book Appointment</button>
-            </form>
+            <div className="manage">
+                <h1 style={{color:'darkgoldenrod', padding:'150px 0',fontStyle:'italic',margin:'auto',width:'500px'}}>
+                    <p style={{backgroundColor:'aliceblue',padding:'20px',borderRadius:'10px'}}>
+                    <p style={{paddingTop:'15px'}} className='textSize'><p>No scheduled appointments avaliable... click below link to book an appointment</p><p style={{textDecoration:'underline'}} onClick={bookedfunc}>Book appointment</p></p>
+                    <p style={{paddingTop:'15px',textDecoration:'underline'}} className='textSize' onClick={cancelled}>Cancel appointment</p>
+                    </p>
+                </h1>
+                
+            </div>
         </div>
     )
 }
